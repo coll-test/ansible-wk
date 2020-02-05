@@ -19,6 +19,7 @@ files:
   $modules/cloud/amazon/ec2.py:
     maintainers: $team_ansible
     ignored: skvidal
+    migrated_to: amazon.amazon
   $modules/cloud/amazon/ec2_asg.py: $team_ansible s-hertel ryansb
   $modules/cloud/amazon/ec2_group.py: $team_ansible
   $modules/cloud/amazon/ec2_instance.py: Shaps
@@ -1229,6 +1230,7 @@ files:
     labels:
     - aws
     - cloud
+    migrated_to: amazon.amazon
   $module_utils/ecs/:
     maintainers: ctrufan tylert $team_crypto
   $module_utils/facts:
@@ -2183,27 +2185,27 @@ files:
   lib/ansible/plugins/strategy/linear.py:
     migrated_to: yum_unit_test_migration_spec.yum_collection
   test/units/modules/utils.py:
-    migrated_to: misc.glob
+    migrated_to: amazon.amazon
   test/units/compat/unittest.py:
-    migrated_to: misc.glob
+    migrated_to: amazon.amazon
   test/units/compat/mock.py:
-    migrated_to: misc.glob
+    migrated_to: amazon.amazon
   test/units/compat/__init__.py:
-    migrated_to: misc.glob
+    migrated_to: amazon.amazon
   test/units/compat/builtins.py:
-    migrated_to: misc.glob
+    migrated_to: amazon.amazon
   test/units/mock/yaml_helper.py:
-    migrated_to: misc.glob
+    migrated_to: amazon.amazon
   test/units/mock/__init__.py:
-    migrated_to: misc.glob
+    migrated_to: amazon.amazon
   test/units/mock/vault_helper.py:
-    migrated_to: misc.glob
+    migrated_to: amazon.amazon
   test/units/mock/path.py:
-    migrated_to: misc.glob
+    migrated_to: amazon.amazon
   test/units/mock/loader.py:
-    migrated_to: misc.glob
+    migrated_to: amazon.amazon
   test/units/mock/procenv.py:
-    migrated_to: misc.glob
+    migrated_to: amazon.amazon
   test/units/modules/conftest.py:
     migrated_to: misc.glob
   test/units/modules/packaging/os/conftest.py:
@@ -3265,7 +3267,7 @@ files:
   test/units/modules/cloud/amazon/placebo_recordings/ec2_vpc_vpn/add_tags/ec2.DescribeVpnConnections_6.json:
     migrated_to: yum_unit_test_migration_spec.yum_collection
   test/units/module_utils/conftest.py:
-    migrated_to: yum_unit_test_migration_spec.yum_collection
+    migrated_to: amazon.amazon
   test/units/module_utils/network/aci/test_aci.py:
     migrated_to: yum_unit_test_migration_spec.yum_collection
   test/units/module_utils/network/aci/__init__.py:
@@ -3275,9 +3277,9 @@ files:
   test/units/plugins/lookup/test_env.py:
     migrated_to: yum_unit_test_migration_spec.yum_collection
   test/units/plugins/lookup/__init__.py:
-    migrated_to: yum_unit_test_migration_spec.yum_collection
+    migrated_to: amazon.amazon
   test/units/plugins/lookup/fixtures/avi.json:
-    migrated_to: yum_unit_test_migration_spec.yum_collection
+    migrated_to: amazon.amazon
   test/units/plugins/shell/test_cmd.py:
     migrated_to: yum_unit_test_migration_spec.yum_collection
   test/units/plugins/shell/__init__.py:
@@ -3508,6 +3510,20 @@ files:
     migrated_to: new_azure_order.azure
   test/integration/targets/setup_azure/aliases:
     migrated_to: new_azure_order.azure
+  lib/ansible/plugins/doc_fragments/ec2.py:
+    migrated_to: amazon.amazon
+  lib/ansible/modules/cloud/amazon/_ec2_facts.py:
+    migrated_to: amazon.amazon
+  lib/ansible/plugins/lookup/aws_secret.py:
+    migrated_to: amazon.amazon
+  test/units/module_utils/test_ec2.py:
+    migrated_to: amazon.amazon
+  test/units/module_utils/ec2/test_aws.py:
+    migrated_to: amazon.amazon
+  test/units/module_utils/ec2/__init__.py:
+    migrated_to: amazon.amazon
+  test/units/plugins/lookup/test_aws_secret.py:
+    migrated_to: amazon.amazon
 macros:
   module_utils: lib/ansible/module_utils
   modules: lib/ansible/modules
