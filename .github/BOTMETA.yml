@@ -2182,29 +2182,29 @@ files:
   lib/ansible/plugins/strategy/linear.py:
     migrated_to: yum_unit_test_migration_spec.yum_collection
   test/units/modules/utils.py:
-    migrated_to: yum_unit_test_migration_spec.yum_collection
+    migrated_to: misc.glob
   test/units/compat/unittest.py:
-    migrated_to: yum_unit_test_migration_spec.yum_collection
+    migrated_to: misc.glob
   test/units/compat/mock.py:
-    migrated_to: yum_unit_test_migration_spec.yum_collection
+    migrated_to: misc.glob
   test/units/compat/__init__.py:
-    migrated_to: yum_unit_test_migration_spec.yum_collection
+    migrated_to: misc.glob
   test/units/compat/builtins.py:
-    migrated_to: yum_unit_test_migration_spec.yum_collection
+    migrated_to: misc.glob
   test/units/mock/yaml_helper.py:
-    migrated_to: yum_unit_test_migration_spec.yum_collection
+    migrated_to: misc.glob
   test/units/mock/__init__.py:
-    migrated_to: yum_unit_test_migration_spec.yum_collection
+    migrated_to: misc.glob
   test/units/mock/vault_helper.py:
-    migrated_to: yum_unit_test_migration_spec.yum_collection
+    migrated_to: misc.glob
   test/units/mock/path.py:
-    migrated_to: yum_unit_test_migration_spec.yum_collection
+    migrated_to: misc.glob
   test/units/mock/loader.py:
-    migrated_to: yum_unit_test_migration_spec.yum_collection
+    migrated_to: misc.glob
   test/units/mock/procenv.py:
-    migrated_to: yum_unit_test_migration_spec.yum_collection
+    migrated_to: misc.glob
   test/units/modules/conftest.py:
-    migrated_to: yum_unit_test_migration_spec.yum_collection
+    migrated_to: misc.glob
   test/units/modules/packaging/os/conftest.py:
     migrated_to: yum_unit_test_migration_spec.yum_collection
   test/units/modules/packaging/os/test_yum.py:
@@ -3405,6 +3405,88 @@ files:
     migrated_to: yum_unit_test_migration_spec.yum_collection
   test/integration/targets/setup_ec2/vars/main.yml:
     migrated_to: yum_unit_test_migration_spec.yum_collection
+  lib/ansible/plugins/doc_fragments/oneview.py:
+    migrated_to: misc.glob
+  lib/ansible/modules/remote_management/oneview/oneview_san_manager_info.py:
+    migrated_to: misc.glob
+  lib/ansible/modules/remote_management/oneview/oneview_san_manager.py:
+    migrated_to: misc.glob
+  lib/ansible/modules/remote_management/oneview/oneview_network_set_info.py:
+    migrated_to: misc.glob
+  lib/ansible/modules/remote_management/oneview/oneview_network_set.py:
+    migrated_to: misc.glob
+  lib/ansible/modules/remote_management/oneview/oneview_logical_interconnect_group_info.py:
+    migrated_to: misc.glob
+  lib/ansible/modules/remote_management/oneview/oneview_logical_interconnect_group.py:
+    migrated_to: misc.glob
+  lib/ansible/modules/remote_management/oneview/oneview_fcoe_network_info.py:
+    migrated_to: misc.glob
+  lib/ansible/modules/remote_management/oneview/oneview_fcoe_network.py:
+    migrated_to: misc.glob
+  lib/ansible/modules/remote_management/oneview/oneview_fc_network_info.py:
+    migrated_to: misc.glob
+  lib/ansible/modules/remote_management/oneview/oneview_fc_network.py:
+    migrated_to: misc.glob
+  lib/ansible/modules/remote_management/oneview/oneview_ethernet_network_info.py:
+    migrated_to: misc.glob
+  lib/ansible/modules/remote_management/oneview/oneview_ethernet_network.py:
+    migrated_to: misc.glob
+  lib/ansible/modules/remote_management/oneview/oneview_enclosure_info.py:
+    migrated_to: misc.glob
+  lib/ansible/modules/remote_management/oneview/oneview_datacenter_info.py:
+    migrated_to: misc.glob
+  lib/ansible/modules/remote_management/oneview/_oneview_san_manager_facts.py:
+    migrated_to: misc.glob
+  lib/ansible/modules/remote_management/oneview/_oneview_network_set_facts.py:
+    migrated_to: misc.glob
+  lib/ansible/modules/remote_management/oneview/_oneview_logical_interconnect_group_facts.py:
+    migrated_to: misc.glob
+  lib/ansible/modules/remote_management/oneview/_oneview_fcoe_network_facts.py:
+    migrated_to: misc.glob
+  lib/ansible/modules/remote_management/oneview/_oneview_fc_network_facts.py:
+    migrated_to: misc.glob
+  lib/ansible/modules/remote_management/oneview/_oneview_ethernet_network_facts.py:
+    migrated_to: misc.glob
+  lib/ansible/modules/remote_management/oneview/_oneview_enclosure_facts.py:
+    migrated_to: misc.glob
+  lib/ansible/modules/remote_management/oneview/_oneview_datacenter_facts.py:
+    migrated_to: misc.glob
+  lib/ansible/module_utils/oneview.py:
+    migrated_to: misc.glob
+  test/units/modules/remote_management/oneview/conftest.py:
+    migrated_to: misc.glob
+  test/units/modules/remote_management/oneview/test_oneview_san_manager_info.py:
+    migrated_to: misc.glob
+  test/units/modules/remote_management/oneview/hpe_test_utils.py:
+    migrated_to: misc.glob
+  test/units/modules/remote_management/oneview/oneview_module_loader.py:
+    migrated_to: misc.glob
+  test/units/modules/remote_management/oneview/test_oneview_san_manager.py:
+    migrated_to: misc.glob
+  test/units/modules/remote_management/oneview/test_oneview_network_set_info.py:
+    migrated_to: misc.glob
+  test/units/modules/remote_management/oneview/test_oneview_network_set.py:
+    migrated_to: misc.glob
+  test/units/modules/remote_management/oneview/test_oneview_logical_interconnect_group_info.py:
+    migrated_to: misc.glob
+  test/units/modules/remote_management/oneview/test_oneview_logical_interconnect_group.py:
+    migrated_to: misc.glob
+  test/units/modules/remote_management/oneview/test_oneview_fcoe_network_info.py:
+    migrated_to: misc.glob
+  test/units/modules/remote_management/oneview/test_oneview_fcoe_network.py:
+    migrated_to: misc.glob
+  test/units/modules/remote_management/oneview/test_oneview_fc_network_info.py:
+    migrated_to: misc.glob
+  test/units/modules/remote_management/oneview/test_oneview_fc_network.py:
+    migrated_to: misc.glob
+  test/units/modules/remote_management/oneview/test_oneview_ethernet_network_info.py:
+    migrated_to: misc.glob
+  test/units/modules/remote_management/oneview/test_oneview_ethernet_network.py:
+    migrated_to: misc.glob
+  test/units/modules/remote_management/oneview/test_oneview_enclosure_info.py:
+    migrated_to: misc.glob
+  test/units/modules/remote_management/oneview/test_oneview_datacenter_info.py:
+    migrated_to: misc.glob
 macros:
   module_utils: lib/ansible/module_utils
   modules: lib/ansible/modules
