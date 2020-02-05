@@ -1180,6 +1180,7 @@ files:
     labels:
     - azure
     - cloud
+    migrated_to: new_azure_order.azure
   $module_utils/basic.py:
     support: core
   $module_utils/urls.py:
@@ -3487,6 +3488,26 @@ files:
     migrated_to: misc.glob
   test/units/modules/remote_management/oneview/test_oneview_datacenter_info.py:
     migrated_to: misc.glob
+  lib/ansible/plugins/doc_fragments/azure.py:
+    migrated_to: new_azure_order.azure
+  lib/ansible/plugins/doc_fragments/azure_tags.py:
+    migrated_to: new_azure_order.azure
+  lib/ansible/modules/cloud/azure/azure_rm_networkinterface.py:
+    migrated_to: new_azure_order.azure
+  lib/ansible/modules/cloud/azure/azure_rm_webappslot.py:
+    migrated_to: new_azure_order.azure
+  lib/ansible/module_utils/azure_rm_common_ext.py:
+    migrated_to: new_azure_order.azure
+  lib/ansible/module_utils/azure_rm_common_rest.py:
+    migrated_to: new_azure_order.azure
+  test/integration/targets/azure_rm_networkinterface/aliases:
+    migrated_to: new_azure_order.azure
+  test/integration/targets/azure_rm_networkinterface/meta/main.yml:
+    migrated_to: new_azure_order.azure
+  test/integration/targets/azure_rm_networkinterface/tasks/main.yml:
+    migrated_to: new_azure_order.azure
+  test/integration/targets/setup_azure/aliases:
+    migrated_to: new_azure_order.azure
 macros:
   module_utils: lib/ansible/module_utils
   modules: lib/ansible/modules
